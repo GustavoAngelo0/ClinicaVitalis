@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Clinica.BLL/Clinica.BLL.csproj" />
+  <Project Path="Clinica.DAL/Clinica.DAL.csproj" />
+  <Project Path="Clinica.DTO/Clinica.DTO.csproj" />
+  <Project Path="Clinica.UI/Clinica.UI.csproj" />
+</Solution>
