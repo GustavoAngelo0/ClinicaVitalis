@@ -1,6 +1,6 @@
 <Solution>
-  <Project Path="Clinica.BLL/Clinica.BLL.csproj" />
-  <Project Path="Clinica.DAL/Clinica.DAL.csproj" />
-  <Project Path="Clinica.DTO/Clinica.DTO.csproj" />
-  <Project Path="Clinica.UI/Clinica.UI.csproj" />
+  <Project Path="Clinica.BLL/Clinica.BLL.csproj" Id="03443b5d-5a1d-48c4-88d8-c15a974e485a" />
+  <Project Path="Clinica.DAL/Clinica.DAL.csproj" Id="4e63d9fd-7129-4885-85f6-5238136bcb0e" />
+  <Project Path="Clinica.DTO/Clinica.DTO.csproj" Id="eeaf3d86-7675-4aa7-aaff-9797416d3db7" />
+  <Project Path="Clinica.UI/Clinica.UI.csproj" Id="87bd98a5-141a-4a4f-afdc-4921bf38d410" />
 </Solution>
