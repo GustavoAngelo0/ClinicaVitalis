@@ -31,11 +31,11 @@
             this.txtNome = new MaterialSkin.Controls.MaterialTextBox();
             this.txtEmail = new MaterialSkin.Controls.MaterialTextBox();
             this.txtSenha = new MaterialSkin.Controls.MaterialTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCadastrar = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +44,7 @@
             this.txtNome.AnimateReadOnly = false;
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNome.Depth = 0;
-            this.txtNome.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNome.LeadingIcon = null;
             this.txtNome.Location = new System.Drawing.Point(495, 105);
             this.txtNome.MaxLength = 50;
@@ -61,7 +61,7 @@
             this.txtEmail.AnimateReadOnly = false;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Depth = 0;
-            this.txtEmail.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtEmail.LeadingIcon = null;
             this.txtEmail.Location = new System.Drawing.Point(495, 197);
             this.txtEmail.MaxLength = 50;
@@ -78,7 +78,7 @@
             this.txtSenha.AnimateReadOnly = false;
             this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSenha.Depth = 0;
-            this.txtSenha.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtSenha.LeadingIcon = null;
             this.txtSenha.Location = new System.Drawing.Point(498, 294);
             this.txtSenha.MaxLength = 50;
@@ -90,16 +90,6 @@
             this.txtSenha.Text = "";
             this.txtSenha.TrailingIcon = null;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Clinica.UI.Properties.Resources.Logo_Vitalis_de_Gestão_Médica;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 67);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(445, 377);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnCadastrar
             // 
             this.btnCadastrar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -107,12 +97,12 @@
             this.btnCadastrar.Depth = 0;
             this.btnCadastrar.HighEmphasis = true;
             this.btnCadastrar.Icon = null;
-            this.btnCadastrar.Location = new System.Drawing.Point(539, 380);
+            this.btnCadastrar.Location = new System.Drawing.Point(560, 384);
             this.btnCadastrar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnCadastrar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnCadastrar.Size = new System.Drawing.Size(158, 36);
+            this.btnCadastrar.Size = new System.Drawing.Size(106, 36);
             this.btnCadastrar.TabIndex = 4;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -124,7 +114,7 @@
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel1.Location = new System.Drawing.Point(492, 83);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
@@ -157,6 +147,16 @@
             this.materialLabel3.TabIndex = 7;
             this.materialLabel3.Text = "senha:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Clinica.UI.Properties.Resources.Logo_Vitalis_de_Gestão_Médica;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 83);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(445, 361);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -171,7 +171,7 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtNome);
             this.Name = "FrmCadastro";
-            this.Text = "FrmCadastro";
+            this.Text = "Criar Conta";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

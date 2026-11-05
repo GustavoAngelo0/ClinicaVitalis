@@ -1,4 +1,9 @@
-﻿using System;
+﻿using Clinica.DAL;
+using Clinica.DTO;
+using Clinica.UI;
+using MaterialSkin;
+using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,10 +12,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MaterialSkin;
-using MaterialSkin.Controls;
-using Clinica.DAL;
-using Clinica.DTO;
 
 namespace Clinica
 {
@@ -27,7 +28,7 @@ namespace Clinica
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
 
-            // Paleta de cores moderna para área da saúde (Azul / BlueGrey)
+            // Paleta de cores para área da saúde (Azul / LightBlue)
             materialSkinManager.ColorScheme = new ColorScheme(
                 Primary.Blue800,
                 Primary.Blue900,
@@ -44,7 +45,7 @@ namespace Clinica
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
-            // Captura o texto das caixas (ajusta os nomes se mudaste na janela de Propriedades)
+            // Captura o texto das caixas de e-mail e senha
             string email = materialTextBox1.Text.Trim();
             string senha = materialTextBox2.Text.Trim();
 
@@ -65,10 +66,11 @@ namespace Clinica
                 {
                     MessageBox.Show($"Bem-vindo ao Vitalis, {usuario.Nome}!\nPerfil: {usuario.Perfil}", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // Próximo passo: Esconder tela de login e abrir o Menu Principal
-                    // this.Hide();
-                    // FrmPrincipal mainForm = new FrmPrincipal();
-                    // mainForm.Show();
+                    // Abre a janela principal APENAS se o login for válido
+                    FrmPrincipal principal = new FrmPrincipal();
+                    this.Hide();            // Oculta a janela de login atual
+                    principal.ShowDialog(); // Abre a janela principal do Vitalis
+                    this.Close();
                 }
                 else
                 {
@@ -82,10 +84,15 @@ namespace Clinica
         }
 
         private void lklConta_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        
         {
             FrmCadastro frmCadastro = new FrmCadastro();
             frmCadastro.ShowDialog(); // Abre a janela de cadastro em modo modal
+        }
+
+        private void lklSenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmEsqueceuSenha frmEsqueceu = new FrmEsqueceuSenha();
+            frmEsqueceu.ShowDialog();
         }
     }
 }
