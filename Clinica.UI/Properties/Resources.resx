@@ -118,10 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="logoVitalis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logoVitalis.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logo Vitalis de Gestão Médica1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Vitalis de Gestão Médica1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logo Vitalis de Gestão Médica" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo Vitalis de Gestão Médica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoVitalis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoVitalis.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo Vitalis de Gestão Médica2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Vitalis de Gestão Médica2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo Vitalis de Gestão Médica3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Vitalis de Gestão Médica3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

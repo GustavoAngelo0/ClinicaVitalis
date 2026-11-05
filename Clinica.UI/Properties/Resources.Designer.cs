@@ -73,6 +73,36 @@ namespace Clinica.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logo_Vitalis_de_Gestão_Médica1 {
+            get {
+                object obj = ResourceManager.GetObject("Logo Vitalis de Gestão Médica1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Vitalis_de_Gestão_Médica2 {
+            get {
+                object obj = ResourceManager.GetObject("Logo Vitalis de Gestão Médica2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Vitalis_de_Gestão_Médica3 {
+            get {
+                object obj = ResourceManager.GetObject("Logo Vitalis de Gestão Médica3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logoVitalis {
             get {
                 object obj = ResourceManager.GetObject("logoVitalis", resourceCulture);
