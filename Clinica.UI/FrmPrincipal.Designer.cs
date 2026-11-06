@@ -29,35 +29,35 @@
         private void InitializeComponent()
         {
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnDeletar = new MaterialSkin.Controls.MaterialButton();
+            this.btnEditar = new MaterialSkin.Controls.MaterialButton();
+            this.btnNovoUsuario = new MaterialSkin.Controls.MaterialButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.colId1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNome1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEmail1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCargo1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnDeletar2 = new MaterialSkin.Controls.MaterialButton();
             this.btnEditar3 = new MaterialSkin.Controls.MaterialButton();
             this.btnNovo2 = new MaterialSkin.Controls.MaterialButton();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.colNome2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colData = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.colCargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnNovoUsuario = new MaterialSkin.Controls.MaterialButton();
-            this.btnEditar = new MaterialSkin.Controls.MaterialButton();
-            this.btnDeletar = new MaterialSkin.Controls.MaterialButton();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.colId1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNome1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEmail1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCargo1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colId2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNome2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialTabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -72,6 +72,123 @@
             this.materialTabControl1.SelectedIndex = 0;
             this.materialTabControl1.Size = new System.Drawing.Size(788, 296);
             this.materialTabControl1.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.btnDeletar);
+            this.tabPage1.Controls.Add(this.btnEditar);
+            this.tabPage1.Controls.Add(this.btnNovoUsuario);
+            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(780, 267);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Dashboard";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btnDeletar
+            // 
+            this.btnDeletar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnDeletar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnDeletar.Depth = 0;
+            this.btnDeletar.HighEmphasis = true;
+            this.btnDeletar.Icon = null;
+            this.btnDeletar.Location = new System.Drawing.Point(232, 18);
+            this.btnDeletar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnDeletar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnDeletar.Size = new System.Drawing.Size(80, 36);
+            this.btnDeletar.TabIndex = 6;
+            this.btnDeletar.Text = "Excluir";
+            this.btnDeletar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnDeletar.UseAccentColor = false;
+            this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnEditar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnEditar.Depth = 0;
+            this.btnEditar.HighEmphasis = true;
+            this.btnEditar.Icon = null;
+            this.btnEditar.Location = new System.Drawing.Point(121, 18);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnEditar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnEditar.Size = new System.Drawing.Size(71, 36);
+            this.btnEditar.TabIndex = 5;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnEditar.UseAccentColor = false;
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnNovoUsuario
+            // 
+            this.btnNovoUsuario.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnNovoUsuario.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnNovoUsuario.Depth = 0;
+            this.btnNovoUsuario.HighEmphasis = true;
+            this.btnNovoUsuario.Icon = null;
+            this.btnNovoUsuario.Location = new System.Drawing.Point(17, 18);
+            this.btnNovoUsuario.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnNovoUsuario.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnNovoUsuario.Name = "btnNovoUsuario";
+            this.btnNovoUsuario.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnNovoUsuario.Size = new System.Drawing.Size(64, 36);
+            this.btnNovoUsuario.TabIndex = 4;
+            this.btnNovoUsuario.Text = "Novo";
+            this.btnNovoUsuario.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnNovoUsuario.UseAccentColor = false;
+            this.btnNovoUsuario.UseVisualStyleBackColor = true;
+            this.btnNovoUsuario.Click += new System.EventHandler(this.materialButton1_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colId1,
+            this.colNome1,
+            this.colEmail1,
+            this.colCargo1});
+            this.dataGridView1.Location = new System.Drawing.Point(17, 72);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(749, 189);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // colId1
+            // 
+            this.colId1.HeaderText = "Id";
+            this.colId1.MinimumWidth = 6;
+            this.colId1.Name = "colId1";
+            this.colId1.Width = 125;
+            // 
+            // colNome1
+            // 
+            this.colNome1.HeaderText = "Nome";
+            this.colNome1.MinimumWidth = 6;
+            this.colNome1.Name = "colNome1";
+            this.colNome1.Width = 125;
+            // 
+            // colEmail1
+            // 
+            this.colEmail1.HeaderText = "E-mail";
+            this.colEmail1.MinimumWidth = 6;
+            this.colEmail1.Name = "colEmail1";
+            this.colEmail1.Width = 125;
+            // 
+            // colCargo1
+            // 
+            this.colCargo1.HeaderText = "Cargo";
+            this.colCargo1.MinimumWidth = 6;
+            this.colCargo1.Name = "colCargo1";
+            this.colCargo1.Width = 125;
             // 
             // tabPage2
             // 
@@ -151,52 +268,17 @@
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colId2,
             this.colNome2,
             this.colCpf,
             this.colTelefone,
-            this.colData,
-            this.colEndereco});
+            this.colData});
             this.dataGridView2.Location = new System.Drawing.Point(18, 82);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(744, 179);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // colNome2
-            // 
-            this.colNome2.HeaderText = "Nome";
-            this.colNome2.MinimumWidth = 6;
-            this.colNome2.Name = "colNome2";
-            this.colNome2.Width = 125;
-            // 
-            // colCpf
-            // 
-            this.colCpf.HeaderText = "CPF";
-            this.colCpf.MinimumWidth = 6;
-            this.colCpf.Name = "colCpf";
-            this.colCpf.Width = 125;
-            // 
-            // colTelefone
-            // 
-            this.colTelefone.HeaderText = "Telefone";
-            this.colTelefone.MinimumWidth = 6;
-            this.colTelefone.Name = "colTelefone";
-            this.colTelefone.Width = 125;
-            // 
-            // colData
-            // 
-            this.colData.HeaderText = "Data Nasc.";
-            this.colData.MinimumWidth = 6;
-            this.colData.Name = "colData";
-            this.colData.Width = 125;
-            // 
-            // colEndereco
-            // 
-            this.colEndereco.HeaderText = "Endereço";
-            this.colEndereco.MinimumWidth = 6;
-            this.colEndereco.Name = "colEndereco";
-            this.colEndereco.Width = 125;
             // 
             // materialTabSelector1
             // 
@@ -211,21 +293,6 @@
             this.materialTabSelector1.TabIndex = 1;
             this.materialTabSelector1.Text = "materialTabSelector1";
             this.materialTabSelector1.Click += new System.EventHandler(this.materialTabSelector1_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colId1,
-            this.colNome1,
-            this.colEmail1,
-            this.colCargo1});
-            this.dataGridView1.Location = new System.Drawing.Point(17, 72);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(749, 189);
-            this.dataGridView1.TabIndex = 3;
             // 
             // colCargo
             // 
@@ -255,107 +322,40 @@
             this.colId.Name = "colId";
             this.colId.Width = 125;
             // 
-            // btnNovoUsuario
+            // colId2
             // 
-            this.btnNovoUsuario.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnNovoUsuario.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnNovoUsuario.Depth = 0;
-            this.btnNovoUsuario.HighEmphasis = true;
-            this.btnNovoUsuario.Icon = null;
-            this.btnNovoUsuario.Location = new System.Drawing.Point(17, 18);
-            this.btnNovoUsuario.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnNovoUsuario.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnNovoUsuario.Name = "btnNovoUsuario";
-            this.btnNovoUsuario.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnNovoUsuario.Size = new System.Drawing.Size(64, 36);
-            this.btnNovoUsuario.TabIndex = 4;
-            this.btnNovoUsuario.Text = "Novo";
-            this.btnNovoUsuario.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnNovoUsuario.UseAccentColor = false;
-            this.btnNovoUsuario.UseVisualStyleBackColor = true;
-            this.btnNovoUsuario.Click += new System.EventHandler(this.materialButton1_Click);
+            this.colId2.HeaderText = "Id";
+            this.colId2.MinimumWidth = 6;
+            this.colId2.Name = "colId2";
+            this.colId2.Width = 125;
             // 
-            // btnEditar
+            // colNome2
             // 
-            this.btnEditar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnEditar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnEditar.Depth = 0;
-            this.btnEditar.HighEmphasis = true;
-            this.btnEditar.Icon = null;
-            this.btnEditar.Location = new System.Drawing.Point(121, 18);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnEditar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnEditar.Size = new System.Drawing.Size(71, 36);
-            this.btnEditar.TabIndex = 5;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnEditar.UseAccentColor = false;
-            this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            this.colNome2.HeaderText = "Nome";
+            this.colNome2.MinimumWidth = 6;
+            this.colNome2.Name = "colNome2";
+            this.colNome2.Width = 125;
             // 
-            // btnDeletar
+            // colCpf
             // 
-            this.btnDeletar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnDeletar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnDeletar.Depth = 0;
-            this.btnDeletar.HighEmphasis = true;
-            this.btnDeletar.Icon = null;
-            this.btnDeletar.Location = new System.Drawing.Point(232, 18);
-            this.btnDeletar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnDeletar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnDeletar.Size = new System.Drawing.Size(80, 36);
-            this.btnDeletar.TabIndex = 6;
-            this.btnDeletar.Text = "Excluir";
-            this.btnDeletar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnDeletar.UseAccentColor = false;
-            this.btnDeletar.UseVisualStyleBackColor = true;
-            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
+            this.colCpf.HeaderText = "CPF";
+            this.colCpf.MinimumWidth = 6;
+            this.colCpf.Name = "colCpf";
+            this.colCpf.Width = 125;
             // 
-            // tabPage1
+            // colTelefone
             // 
-            this.tabPage1.Controls.Add(this.btnDeletar);
-            this.tabPage1.Controls.Add(this.btnEditar);
-            this.tabPage1.Controls.Add(this.btnNovoUsuario);
-            this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(780, 267);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Dashboard";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.colTelefone.HeaderText = "Telefone";
+            this.colTelefone.MinimumWidth = 6;
+            this.colTelefone.Name = "colTelefone";
+            this.colTelefone.Width = 125;
             // 
-            // colId1
+            // colData
             // 
-            this.colId1.HeaderText = "Id";
-            this.colId1.MinimumWidth = 6;
-            this.colId1.Name = "colId1";
-            this.colId1.Width = 125;
-            // 
-            // colNome1
-            // 
-            this.colNome1.HeaderText = "Nome";
-            this.colNome1.MinimumWidth = 6;
-            this.colNome1.Name = "colNome1";
-            this.colNome1.Width = 125;
-            // 
-            // colEmail1
-            // 
-            this.colEmail1.HeaderText = "E-mail";
-            this.colEmail1.MinimumWidth = 6;
-            this.colEmail1.Name = "colEmail1";
-            this.colEmail1.Width = 125;
-            // 
-            // colCargo1
-            // 
-            this.colCargo1.HeaderText = "Cargo";
-            this.colCargo1.MinimumWidth = 6;
-            this.colCargo1.Name = "colCargo1";
-            this.colCargo1.Width = 125;
+            this.colData.HeaderText = "Data Nasc.";
+            this.colData.MinimumWidth = 6;
+            this.colData.Name = "colData";
+            this.colData.Width = 125;
             // 
             // FrmPrincipal
             // 
@@ -368,12 +368,12 @@
             this.Text = "Vitalis";
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.materialTabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -387,11 +387,6 @@
         private MaterialSkin.Controls.MaterialButton btnNovo2;
         private System.Windows.Forms.DataGridView dataGridView2;
         private MaterialSkin.Controls.MaterialButton btnDeletar2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNome2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colCpf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTelefone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colData;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colEndereco;
         private System.Windows.Forms.TabPage tabPage1;
         private MaterialSkin.Controls.MaterialButton btnDeletar;
         private MaterialSkin.Controls.MaterialButton btnEditar;
@@ -405,5 +400,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colNome1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEmail1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCargo1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colId2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNome2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCpf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTelefone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colData;
     }
 }
